@@ -1,0 +1,124 @@
+/* =============
+  MOBILE FIRST
+============== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-size: cover;
+  background-color: #d6e1ff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =============
+  TYPOGRAPHY
+============== */
+
+h1,
+.hero__plan,
+.hero__link,
+.hero__link-btn {
+  font-weight: 900;
+}
+
+.hero__body,
+.hero__price,
+.cancel-btn {
+  color: #838699;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+.hero__plan,
+.hero__price {
+  margin: 0;
+}
+
+h1 {
+  color: #0f1f40;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.hero__body {
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 2em;
+}
+
+.hero__link {
+  display: block;
+  text-align: right;
+  font-size: 0.875rem;
+}
+
+.hero__link-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2em;
+}
+
+.proceed-btn {
+  background-color: #382ae1;
+  border-radius: 0.75em;
+  color: white;
+  padding: 1em 0;
+}
+
+/* =============
+  LAYOUT
+============== */
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero__img {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.hero__body-container {
+  padding: 2em 1.25em;
+  background-color: white;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.hero__widget {
+  background-color: #f8f9fe;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.hero__icon-col {
+  width: 25%;
+}
+
+.hero__plan-price-col {
+  width: 32.5%;
+}
+
+.hero__link-col {
+  width: 45%;
+}
