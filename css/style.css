@@ -155,7 +155,7 @@ h1 {
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (hover: none) {
   .container {
     height: 100vw;
     background-size: 100vw 50vw;
