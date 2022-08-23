@@ -95,6 +95,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 1em;
 }
 
 .card {
@@ -118,11 +119,7 @@ h1 {
 .card__widget {
   background-color: #f5f7ff;
   border-radius: 1em;
-  padding: 1.5em;
-}
-
-.card__music-icon {
-  margin-right: 1.5em;
+  padding: 1.5em 1em;
 }
 
 /* =============
@@ -155,5 +152,12 @@ h1 {
 
   .cancel-btn {
     border-radius: 0.25em;
+  }
+}
+
+@media (orientation: landscape) {
+  .container {
+    height: 100vw;
+    background-size: 100vw 50vw;
   }
 }
