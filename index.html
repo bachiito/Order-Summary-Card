@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | Order summary card</title>
+    <title>Order Summary Card</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,43 +19,43 @@
     />
   </head>
 
-  <body class="row">
-    <div class="container">
-      <div class="hero">
-        <img
-          src="images/illustration-hero.svg"
-          alt="girl with headphones dancing and listening to music"
-          class="hero__img"
-        />
+  <body>
+    <div class="container row">
+      <div class="card">
+        <div class="card__hero">
+          <img
+            src="images/illustration-hero.svg"
+            alt="girl with headphones dancing and listening to music"
+            class="card__img"
+          />
 
-        <div class="hero__body-container">
-          <h1 class="hero__title">Order Summary</h1>
-          <p class="hero__body">
-            You can now listen to millions of songs, audiobooks, and podcasts on
-            any device anywhere you like!
-          </p>
+          <div class="card__body-container">
+            <h1 class="card__title">Order Summary</h1>
+            <p class="card__body">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
 
-          <div class="hero__widget row">
-            <div class="hero__col hero__icon-col">
+            <div class="card__widget row">
               <img
                 src="images/icon-music.svg"
                 alt="Two eighth notes connected with a beam."
-                class="hero__music-icon"
+                class="card__music-icon"
               />
+
+              <div class="card__plan-price-col">
+                <p class="card__plan">Annual Plan</p>
+                <p class="card__price">$59.99/year</p>
+              </div>
+
+              <a href="#" class="card__link">Change</a>
             </div>
 
-            <div class="hero__col hero__plan-price-col">
-              <p class="hero__plan">Annual Plan</p>
-              <p class="hero__price">$59.99/year</p>
-            </div>
-
-            <div class="hero__col hero__link-col">
-              <a href="#" class="hero__link">Change</a>
-            </div>
+            <a href="#" class="card__link-btn proceed-btn">
+              Proceed to payment
+            </a>
+            <a href="#" class="card__link-btn cancel-btn">Cancel Order</a>
           </div>
-
-          <a href="#" class="hero__link-btn proceed-btn">Proceed to payment</a>
-          <a href="#" class="hero__link-btn cancel-btn">Cancel Order</a>
         </div>
       </div>
     </div>

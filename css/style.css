@@ -1,6 +1,6 @@
-/* =============
-  MOBILE FIRST
-============== */
+:root {
+  --bright-blue: hsl(245, 75%, 52%);
+}
 
 * {
   box-sizing: border-box;
@@ -8,11 +8,7 @@
 
 body {
   margin: 0;
-  height: 100vh;
   font-family: "Red Hat Display", sans-serif;
-  background-image: url("../images/pattern-background-mobile.svg");
-  background-size: cover;
-  background-color: #d6e1ff;
 }
 
 img {
@@ -24,56 +20,59 @@ img {
   TYPOGRAPHY
 ============== */
 
-h1,
-.hero__plan,
-.hero__link,
-.hero__link-btn {
-  font-weight: 900;
+.card__link,
+.card__link-btn {
+  transition: all 0.3 ease;
 }
 
-.hero__body,
-.hero__price,
+.card__plan,
+.card__link,
+.card__link-btn {
+  font-weight: 700;
+}
+
+.card__body,
+.card__price,
 .cancel-btn {
   color: #838699;
 }
 
-h1,
-p {
-  text-align: center;
+.card__link,
+.card__link-btn {
+  display: block;
 }
 
-.hero__plan,
-.hero__price {
+.card__plan,
+.card__price {
   margin: 0;
 }
 
 h1 {
   color: #0f1f40;
   font-size: 1.5rem;
+  font-weight: 900;
   margin-top: 0;
 }
 
-.hero__body {
+.card__body {
   font-weight: 500;
   line-height: 1.7;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
-.hero__link {
-  display: block;
-  text-align: right;
+.card__link {
   font-size: 0.875rem;
+  color: var(--bright-blue);
+  margin-left: auto;
 }
 
-.hero__link-btn {
-  display: block;
-  text-align: center;
+.card__link-btn {
   text-decoration: none;
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 
 .proceed-btn {
-  background-color: #382ae1;
+  background-color: var(--bright-blue);
   border-radius: 0.75em;
   color: white;
   padding: 1em 0;
@@ -83,42 +82,78 @@ h1 {
   LAYOUT
 ============== */
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: 100vw 50vh;
+  background-color: #e0e8ff;
+  background-repeat: no-repeat;
+}
+
 .row {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
-.container {
+.card {
   width: 90%;
+  max-width: 450px;
   margin: 0 auto;
-}
-
-.hero__img {
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-}
-
-.hero__body-container {
-  padding: 2em 1.25em;
   background-color: white;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  border-radius: 1.5em;
+  overflow: hidden;
+  text-align: center;
 }
 
-.hero__widget {
-  background-color: #f8f9fe;
+.card__img {
+  width: 100%;
+}
+
+.card__body-container {
+  padding: 2em 1.25em;
+}
+
+.card__widget {
+  background-color: #f5f7ff;
   border-radius: 1em;
-  padding: 1em;
+  padding: 1.5em;
 }
 
-.hero__icon-col {
-  width: 25%;
+.card__music-icon {
+  margin-right: 1.5em;
 }
 
-.hero__plan-price-col {
-  width: 32.5%;
-}
+/* =============
+  MEDIA QUERIES
+============== */
 
-.hero__link-col {
-  width: 45%;
+@media (hover: hover) {
+  .card__link:hover {
+    text-decoration: none;
+  }
+
+  .proceed-btn:hover {
+    opacity: 0.75;
+  }
+
+  .cancel-btn:hover {
+    color: black;
+  }
+
+  .card__link:focus-visible,
+  .card__link-btn:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px white, 0 0 0 7px var(--bright-blue);
+  }
+
+  .card__link:focus-visible {
+    border-radius: 0.25em;
+    padding: 0.35em;
+  }
+
+  .cancel-btn {
+    border-radius: 0.25em;
+  }
 }
