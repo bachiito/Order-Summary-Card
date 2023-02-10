@@ -1,0 +1,159 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-gray: hsl(232, 10%, 56%);
+  --clr-light-gray: hsl(228, 100%, 98%);
+  --clr-dark-blue: hsl(220, 62%, 15%);
+  --clr-bright-blue: hsl(245, 75%, 52%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card__music-icon {
+  margin-inline-end: 1rem;
+}
+
+/* =============
+  TYPOGRAPHY
+============== */
+
+.card__title {
+  color: var(--clr-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+@media (width >= 500px) {
+  .card__title {
+    font-size: 2rem;
+  }
+}
+
+.card__text {
+  color: var(--clr-gray);
+  font-weight: 500;
+}
+
+.card__plan {
+  font-weight: 700;
+  margin: 0;
+}
+
+.card__price {
+  color: var(--clr-gray);
+  font-size: 700;
+  margin: 0;
+  margin-block-start: 0.25em;
+}
+
+.card__link {
+  color: var(--clr-bright-blue);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.card__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.proceed-btn {
+  display: block;
+  color: var(--clr-white);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1em;
+  margin-block-start: 2em;
+  border-radius: 0.75em;
+  background-color: var(--clr-bright-blue);
+  transition: all 0.35s ease;
+}
+
+.proceed-btn:hover {
+  opacity: 0.85;
+}
+
+.cancel-btn {
+  display: block;
+  color: var(--clr-gray);
+  font-weight: 700;
+  text-decoration: none;
+  margin-block-start: 1em;
+  transition: all 0.35s ease;
+}
+
+.cancel-btn:hover {
+  color: var(--clr-black);
+}
+
+/* =============
+  LAYOUT
+============== */
+
+.container {
+  display: grid;
+  place-items: center;
+  width: min(50em, 100% - 2rem);
+  margin-inline: auto;
+  background-image: url("assets/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-group {
+  display: flex;
+}
+
+.card {
+  text-align: center;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  max-width: 450px;
+}
+
+.card__body {
+  padding: 1rem;
+  background-color: var(--clr-white);
+}
+
+@media (width >= 500px) {
+  .card__body {
+    padding: 2rem;
+  }
+}
+
+.card__widget.flex-group {
+  font-size: 0.875rem;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--clr-light-gray);
+}
+
+.card__plan-price-col {
+  text-align: left;
+  flex-grow: 1;
+}

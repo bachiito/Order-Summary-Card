@@ -70,3 +70,4 @@ This helped me to give the border radius to the card I used it because I had to 
 ## Author
 
 - Frontend Mentor - [@bachiito](https://www.frontendmentor.io/profile/bachiito)
+  z

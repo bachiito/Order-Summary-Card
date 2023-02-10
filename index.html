@@ -4,59 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Summary Card</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="assets/favicon-32x32.png"
     />
   </head>
 
-  <body>
-    <div class="container row">
-      <div class="card">
-        <div class="card__hero">
+  <body class="container">
+    <div class="card">
+      <img
+        src="assets/illustration-hero.svg"
+        alt="girl with headphones dancing and listening to music"
+        class="card__img"
+      />
+      <div class="card__body">
+        <h1 class="card__title">Order Summary</h1>
+        <p class="card__text">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <div class="card__widget flex-group">
           <img
-            src="images/illustration-hero.svg"
-            alt="girl with headphones dancing and listening to music"
-            class="card__img"
+            src="assets/icon-music.svg"
+            alt="Two eighth notes connected with a beam"
+            class="card__music-icon"
           />
 
-          <div class="card__body-container">
-            <h1 class="card__title">Order Summary</h1>
-            <p class="card__body">
-              You can now listen to millions of songs, audiobooks, and podcasts
-              on any device anywhere you like!
-            </p>
-
-            <div class="card__widget row">
-              <img
-                src="images/icon-music.svg"
-                alt="Two eighth notes connected with a beam."
-                class="card__music-icon"
-              />
-
-              <div class="card__plan-price-col">
-                <p class="card__plan">Annual Plan</p>
-                <p class="card__price">$59.99/year</p>
-              </div>
-
-              <a href="#" class="card__link">Change</a>
-            </div>
-
-            <a href="#" class="card__link-btn proceed-btn">
-              Proceed to payment
-            </a>
-            <a href="#" class="card__link-btn cancel-btn">Cancel Order</a>
+          <div class="card__plan-price-col">
+            <p class="card__plan">Annual Plan</p>
+            <p class="card__price">$59.99/year</p>
           </div>
+
+          <a href="#" class="card__link">Change</a>
         </div>
+
+        <a href="#" class="proceed-btn"> Proceed to payment </a>
+        <a href="#" class="cancel-btn">Cancel Order</a>
       </div>
     </div>
   </body>
